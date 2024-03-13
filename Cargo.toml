@@ -1,0 +1,27 @@
+[package]
+name = "hal"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.80"
+async-stream = "0.3.5"
+axum = "0.7.4"
+axum-streams = { version = "0.12.0", features = ["json", "text"] }
+candle-core = "0.4.1"
+candle-nn = "0.4.1"
+candle-transformers = "0.4.1"
+clap = { version = "4.5.1", features = ["derive"] }
+env_logger = "0.11.3"
+futures = "0.3.30"
+hf-hub = "0.3.2"
+log = "0.4.21"
+reqwest = "0.11.24"
+reqwest-streams = { version = "0.5.1", features = ["json"] }
+serde = { version = "1.0.197", features = ["derive"] }
+serde_json = "1.0.114"
+tokenizers = "0.15.2"
+tokio = { version = "1.36.0", features = ["rt-multi-thread"] }
+tokio-stream = "0.1.14"
